@@ -13,7 +13,7 @@ Bem-vindo ao meu portfólio! Este é o meu projeto pessoal para exibir minhas ha
 ## Instalação
 
 1. Clone o repositório:
-   git clone https://github.com/caioolima/seu-repositorio.git
+   git clone https://github.com/caioolima/Portfolio-Project
 
 2. Navegue até o diretório do projeto:
     cd Portfolio-Project
