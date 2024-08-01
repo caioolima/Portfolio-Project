@@ -1,0 +1,184 @@
+.container {
+  padding: 20px;
+}
+
+.projects-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.text-zone {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.title-project {
+  text-align: center;
+  margin: 80px 0 40px;
+  font-size: 3rem; /* Tamanho maior para maior impacto */
+  color: #FFCF00; /* Cor de texto escura para contraste */
+  font-family: 'Raleway', sans-serif;
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Colunas responsivas */
+  gap: 20px;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 200px; /* Distância entre o final da lista e outros conteúdos */
+}
+
+.project {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* Evita que a imagem e conteúdo saiam dos limites */
+  position: relative; /* Para sobreposição de texto ou ícones se necessário */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  height: 300px; /* Garante que o conteúdo centralize em altura total */
+  margin: 10px 0; /* Adiciona margem acima e abaixo de cada card */
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Sombra mais intensa */
+}
+
+.project h2 {
+  font-size: 1.75rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.project p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+  font-weight: normal; /* Peso de fonte normal para uma leitura mais fácil */
+}
+
+.project-link {
+  color: #007bff; /* Cor padrão para links */
+  text-decoration: none;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}
+
+.project-link:hover {
+  color: #0056b3; /* Cor mais escura ao passar o mouse */
+}
+
+.project-link svg {
+  font-size: 1.5rem; /* Tamanho maior do ícone */
+}
+
+.project-image {
+  width: 100%;
+  height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+  max-height: 150px; /* Define uma altura máxima para evitar que a imagem fique muito grande */
+  margin-bottom: 15px;
+  object-fit: cover; /* Garante que a imagem preencha o contêiner sem distorção */
+  border-radius: 8px; /* Bordas arredondadas para a imagem */
+}
+
+/* Estilos adicionais para ícones de tecnologia */
+.tech-icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Espaçamento entre ícones */
+}
+
+.tech-icon {
+  font-size: 5rem; /* Tamanho maior dos ícones */
+  color: #555; /* Cor de ícones mais suave */
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 1200px) {
+  .text-zone {
+    padding: 20px;
+  }
+
+  .title-project {
+    font-size: 2.5rem;
+    margin: 60px 0 30px;
+  }
+
+  .projects-list {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .projects-list {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Ajuste para telas médias */
+  }
+
+  .project {
+    height: auto; /* Ajusta a altura automática */
+    margin: 10px;
+  }
+
+  .project h2 {
+    font-size: 1.5rem;
+  }
+
+  .project p {
+    font-size: 0.9rem;
+  }
+
+  .project-link {
+    font-size: 1.2rem;
+  }
+
+  .tech-icon {
+    font-size: 4rem; /* Reduz o tamanho dos ícones */
+  }
+}
+
+@media (max-width: 768px) {
+  .title-project{
+    margin-top: -80px;
+  }
+  .projects-list {
+    width: 480px;
+    margin: -20px 20px;
+    margin-top: -10px;
+  }
+
+  .project {
+    margin: -5px 0; /* Margens ajustadas para telas pequenas */
+  }
+
+  .project h2 {
+    font-size: 1.25rem;
+    margin-top: 10px;
+  }
+
+  .project p {
+    font-size: 0.95rem;
+  }
+
+  .project-link {
+    font-size: 1rem;
+  }
+
+  .tech-icon {
+    font-size: 3rem; /* Reduz ainda mais o tamanho dos ícones */
+  }
+}
